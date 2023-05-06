@@ -14,13 +14,14 @@ public class D1_search_in_2d_matrix {
         //----------------------------------------------------
 
         int l = 0 , r = m*n-1;
+
         while( r>=l )
         {
             int mid = l+ (r-l)/2;
 
             int k = mat[mid/n][mid%n];
 
-            if( k==target ) {
+            if( k==target ){
                 System.out.println( "true" );
                 return;
             }

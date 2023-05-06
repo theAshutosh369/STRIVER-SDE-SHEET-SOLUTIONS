@@ -15,7 +15,7 @@ public class D1_two_sum {
         for( int i = 0 ; i<nums.length ; i++ )
         {
             int k = target - nums[i];
-            if( mp.containsKey( k ))
+            if( mp.containsKey( k )  )
             {
                 ans[0] = i ;
                 ans[1] = mp.get( k );

@@ -4,8 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class D3_majority_elements {
-
-
     public static void main ( String[] args )
     {
 

@@ -1,23 +1,27 @@
 package STRIVER_SDE_SHEET.ARRAYS_1;
 
-public class D6_stock_buy_and_sell {
+public class D6_stock_buy_and_sell
+{
 
-    public static void main ( String[] args ) {
+    public static void main ( String[] args )
+    {
 
-        int[] price = { 7,1,5,3,6,4 };
+        int[] arr = { 7,1,5,3,6,4 };
 
         // -----------------------------------------------
 
-        int n = price.length ;
+        int n = arr.length ;
 
-        int mini = price[0];
+        int mini = arr[0];
         int maxprofit = 0 ;
         for (int i = 1; i < n; i++) {
-            int cost = price[i] - mini ;
+            int cost = arr[i] - mini ;
             maxprofit = Math.max( maxprofit , cost );
-            mini = Math.min( price[i] , mini );
+            mini = Math.min( arr[i] , mini );
         }
 
         System.out.println(" maximum profit will be : " + maxprofit );
+
+
     }
 }

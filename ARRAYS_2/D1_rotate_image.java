@@ -1,6 +1,6 @@
 package STRIVER_SDE_SHEET.ARRAYS_2;
 
-public class D2_rotate_image {
+public class D1_rotate_image {
 
     public static void main ( String[] args ) {
 
@@ -14,12 +14,9 @@ public class D2_rotate_image {
             for (int j = 0; j < i; j++) {
                 int a = arr[i][j];
                 int b = arr[j][i];
-                int temp = a;
-                a=b;
-                b=temp;
 
-                arr[i][j] = a;
-                arr[j][i] = b ;
+                arr[i][j] = b;
+                arr[j][i] = a ;
             }
         }
 
@@ -29,12 +26,9 @@ public class D2_rotate_image {
             for (int j = 0; j < m/2; j++) {
                 int a = arr[i][j];
                 int b = arr[i][m-1-j];
-                int temp = a;
-                a=b;
-                b=temp;
 
-                arr[i][j] = a;
-                arr[i][m-1-j] = b ;
+                arr[i][j] = b;
+                arr[i][m-1-j] = a ;
             }
         }
 

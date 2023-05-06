@@ -7,7 +7,7 @@ public class D4_count_inversions {
         int i = l , j = mid , k = l ;
         int c = 0 ;
 
-        while( i<=mid-1 && j<=r )
+        while( i<mid && j<=r )
         {
             if( arr[i]<=arr[j] )
             {
@@ -19,14 +19,14 @@ public class D4_count_inversions {
             }
         }
 
-        while( i<=mid-1) temp[k++] = arr[i++];
-        while( j<=r) temp[k++] = arr[j++];
+        while( i<mid ) temp[k++] = arr[i++];
+        while( j<=r )  temp[k++] = arr[j++];
 
         for( i = l ; i<= r ; i++  ) arr[i] = temp[i];
 
         return c ;
-
     }
+
     static long f( long arr[] , long temp[] , int l , int r )
     {
         int c=0;
@@ -47,8 +47,6 @@ public class D4_count_inversions {
 
         long arr[] = { 2 ,5, 1, 3 ,4 };
         int n = arr.length;
-        int m = arr.length - 1 ;
-        int l = arr.length + 1 ;
 
         long temp[] = new long[n];
         System.out.println( f( arr , temp , 0 , n-1 )  );
